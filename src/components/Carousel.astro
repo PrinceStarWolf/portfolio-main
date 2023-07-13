@@ -1,0 +1,57 @@
+---
+export interface Props {
+	title: string;
+	body: string;
+	href: string;
+}
+
+const { href, title, body } = Astro.props;
+---
+
+
+<div class="CarouselDevGlobal">
+    <div class="CarouselDev">
+		<h2>
+			{title}
+			<span>&rarr;</span>
+		</h2>
+
+    </div>
+    <div class="CarouselBar">
+        <input type="radio" name="slider" title="slide1" checked="checked" class="slider__nav"/>
+        <input type="radio" name="slider" title="slide2" class="slider__nav"/>
+        <input type="radio" name="slider" title="slide3" class="slider__nav"/>
+        <input type="radio" name="slider" title="slide4" class="slider__nav"/>
+    </div>
+</div> 
+
+
+<style>
+.CarouselDevGlobal{
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    box-sizing: border-box ;
+
+    align-content: center;
+    justify-items: center;
+}
+
+.CarouselDev{
+    height: 100%;
+    width:  100%;
+
+    border-radius: 1ch;
+
+    background-color: #0f0f0f;
+}
+
+.CarouselBar{
+
+    border-radius: 1ch;
+
+    background-color: #0f0f0f;
+}
+</style>

@@ -3,9 +3,10 @@ export interface Props {
 	title: string;
 	body: string;
 	href: string;
+  color: string;
 }
 
-const { href, title, body } = Astro.props;
+const { href, title, body, color } = Astro.props;
 ---
 
 <li class="card">
@@ -20,7 +21,7 @@ const { href, title, body } = Astro.props;
 	</a>
 </li>
 
-<style>
+<style define:vars={{ color }}>
 
 :root {
 	--border: rgb(3, 169, 244);
@@ -33,7 +34,7 @@ const { href, title, body } = Astro.props;
     position: relative;
     height: 200px;
     width: 450px;
-    background-color: #0f0f0f;
+    background-color: var(--color);
 
     margin: 10px;
     border-radius: 1ch;
@@ -45,7 +46,7 @@ const { href, title, body } = Astro.props;
     width: 100%;
     text-decoration: none;
     line-height: 1.4;
-    padding: 70px 0.8rem;
+    padding: 0.8rem 0.8rem;
     border-radius: 0.35rem;
     color: #FFF;
     opacity: 0.8;
@@ -86,17 +87,4 @@ p {
   top: 8%;
   opacity: 1;
 }
-
-
-@media only screen and (max-width: 500px) {
-
-  .card {
-    height: 200px;
-    width: 300px;
-
-  
-  }
-}
-
-
 </style>

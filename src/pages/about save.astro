@@ -1,0 +1,208 @@
+---
+import ColorCard from "../components/ColorCard.astro";
+import Layout from "../layouts/Layout.astro";
+---
+
+
+<Layout title="CD - A Propos">
+	<main>
+        <div class="container">
+                <div class="desc">
+                    <h1>À propos de moi</h1>
+                    <br>
+                    <p>Je m'appelle Hippolyte Maillard, jeune développeur autodidacte depuis bientôt 4 ans.</p>
+                    <br>
+                    <p>J'ai commencé mon parcours par apprendre Unity, voulant être developpeur de jeu, avant de me découvrir une passion pour le développement web en créant un premier site en PHP.</p>
+                    <br>
+                    <p>J'ai vite découvert est appris des outils bien plus moderne et pratique comme React ou AstroJS, apprennant aussi comment fonctionne une base de donnée.</p>
+                    <br>
+                    
+                </div>
+                <div class="space" />
+                <div class="comp">
+                    <div class="cmp">
+
+                        <div class="cmpdiv" id="co">
+                            <img src="../../icon/astro.png">
+                            <h3>AstroJS</h3>
+                        </div>
+
+                        <div class="cmpdiv" id="co2">
+                            <img src="../../icon/unity.png">
+                            <h3>Unity</h3>
+                        </div>
+
+                        <div class="cmpdiv" id="co3">
+                            <img src="../../icon/react.png">
+                            <h3>React</h3>
+                        </div>
+
+                        <div class="cmpdiv" id="co4">
+                            <img src="../../icon/vue.png">
+                            <h3>VueJS</h3>
+                        </div>
+
+                        <div class="cmpdiv" id="co5">
+                            <img src="../../icon/js.png">
+                            <h3>JavaScript</h3>
+                        </div>
+                        
+                        <div class="cmpdiv" id="co6">
+                            <img src="../../icon/nodejs.png">
+                            <h3>NodeJS</h3>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+	</main>
+</Layout>
+
+<script>
+
+
+
+
+</script>
+
+
+
+<style>
+    main{
+
+        height: 100%;
+        width: 100%;
+        background-image: url(../../logo3.ico);
+        background-color: transparent;
+        background-repeat: no-repeat;
+        background-position: center;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 60px;
+        padding: 1em;
+    
+		animation: fadeIn 0.7s;
+	}
+
+	@keyframes fadeIn {
+		0% { opacity: 0; }
+		100% { opacity: 1; }
+	}
+    
+    .container{
+
+        width: 98%;
+
+        display: inline-block;
+        
+        text-align: center;
+        vertical-align: middle;
+
+
+        background-color:  rgba(0, 0, 0, 0.596);
+    }
+
+    .desc{
+        width: 60%;    
+        margin: 0 auto;
+        padding-top: 20px;
+
+
+
+
+
+    }
+
+    .space{
+        height: 40px;
+    }
+
+    .comp{
+        width: 80%;  
+        margin: 0 auto;
+        padding-bottom: 20px;
+        
+    }
+
+    .cmp{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 20px;
+        margin-top: 10px;
+
+
+    }
+
+    .cmpdiv{
+        height: 300px;
+        width: 100%;
+        background-color: grey;
+        align-items: center ;
+
+        border-radius: 1rem;
+        display: flex;
+        flex-direction: column;
+
+        align-items: center;
+        justify-content: center;
+        transition: all 0.3s;
+    }
+    .cmpdiv:hover { 
+        transform: scale(1.1); 
+
+    }
+    
+    img{
+        height: 60px;
+        width: 60px;
+
+
+    }
+    #co{
+        background: linear-gradient(45deg, #e66465, #cb0051, #9f277e);
+    }
+
+    #co2{
+        background: linear-gradient(45deg, #00c6cf, #7fd1ae);
+    }
+
+    #co3{
+        background: linear-gradient(45deg, #2897e6, #7e3fb2);
+    }
+
+    #co4{
+        background: linear-gradient(45deg, #00754b, #6a9a8b);
+    }
+
+    #co5{
+        background: linear-gradient(45deg, #c8ff00, #00c584);
+    }
+
+    #co6{
+        background: linear-gradient(45deg, #845ec2, #d65db1);
+    }
+
+    
+	@media only screen and (max-width: 800px) {
+        .container{
+            height: 100%;
+        }
+
+
+        .desc{
+            width: 100%;
+
+
+
+        }
+
+        .comp{
+            width: 100%;
+            
+        }
+    
+    }
+</style>

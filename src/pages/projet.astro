@@ -1,0 +1,252 @@
+---
+import Carousel from "../components/Carousel.astro";
+import ColorCard from "../components/ColorCard.astro";
+import LinkCard from "../components/LinkCard.astro";
+import MiniCard from "../components/MiniCard.astro";
+import Layout from "../layouts/Layout.astro";
+---
+
+
+<Layout title="CD - Projet">
+    <div class="Global">
+        <div class="Grid">
+            <div class="project">
+
+                <img class="large-img" src="/large-placeholder.png"/>
+                <br/>
+
+                <div class="header">
+
+                    <img class="logo" src="/Kimikob.png"></img>
+                    <div class="title">
+                        <h1>Kimiko RP</h1>
+                        <h3>React-Native</h3>
+                    </div>
+                
+                </div>
+
+                <div class="corp">
+                    <div class="text">
+                        <p>Kimiko Help est une application Android/IOS simple. Servant d'aide pour l'utilisation du bot discord "Kimiko". </p>
+                        <br>
+                        <p>J'aide aussi dans le projet du bot discord, principalement sur l'hébergement.</p>
+                        <br>
+                        <div class="sign">
+                            <p>L'application a était créer avec react-native.</p>
+                            <p><span class="green">Terminé!</span></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="link">
+                    <LinkCard 
+                        href="https://github.com/PrinceStarWolf"
+                        title="Github Kimiko Help"
+                    />
+                    <LinkCard 
+                        href="https://github.com/PrinceStarWolf"
+                        title="Github Kimiko RP"
+                    />
+                </div>
+
+            </div>
+            <div class="project">
+
+
+                <img class="large-img" src="/large-placeholder.png"/>
+                <br/>
+                <div class="header">
+                    <img class="logo" src="/logo-placeholder.png"/>
+                    <div class="title">
+                        <h1>Near</h1>
+                        <h3>React-Native</h3>
+                    </div>
+                </div>
+
+                <div class="corp">
+                    <div class="text">
+                        <p> Near est une application de petite annonces. Créer sous react-native avec la base de donnée supabase, cherchant uniquement à mettre en relation les vendeurs et les acheteurs, le plus simplement possible. </p>
+                        <br>
+                        <div class="sign">
+                            <p>L'application a était créer avec react-native.</p>
+                            <p><span class="orange">En Cours!</span></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="link">
+                    <LinkCard 
+                        href="https://github.com/PrinceStarWolf"
+                        title="Near Github"
+                    />
+                </div>
+            </div>
+            
+            <div class="project">
+
+                <img class="large-img" src="/large-placeholder.png"/>
+                <br/>
+
+                <div class="header">
+
+                    <img class="logo" src="/logo3.ico"></img>
+                    <div class="title">
+                        <h1>Crystal Dev</h1>
+                        <h3>Template - Astro Web Site</h3>
+                    </div>
+                    
+                </div>
+
+                <div class="corp">
+                    <div class="text">
+                        <p> Un site portfolio que vous este entrain de voir! Une Template fait par mes soins, servant de base pour ce site et les future demande de portfolio qui pourrait y correspondre.</p>
+                        <br>
+                        <div class="sign">
+                            <p>L'application a était créer avec AstroJS.</p>
+                            <p><span class="green">Terminé!</span></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="link">
+                    <LinkCard 
+                        href="https://github.com/PrinceStarWolf"
+                        title="Template Github"
+                    />
+                </div>
+            </div>
+        </div>
+    </div>
+</Layout>
+
+
+<style>
+.Global{
+    display: flex;
+    flex-grow: 1;
+	flex-direction: column;
+    justify-content: center;
+
+    margin-top: 60px;
+    
+    padding: 1em;
+}
+
+.Grid{
+    display: grid;
+    grid-gap: 50px;
+    grid-template-columns: repeat(auto-fit, minmax(350px,1fr));
+}
+
+.project {
+    margin: 0 auto;
+    border-radius: .4em;
+    background-color: #17141d;
+    display: block;
+
+    max-width: 600px;
+    min-height: 800px;
+
+    text-align: center;
+    overflow: hidden;
+    animation: fadeIn 0.5s;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.large-img {
+    aspect-ratio: "16/9" ;
+    width: 100%;
+    max-height: 100%;
+}
+
+
+
+.header {
+    gap: 15px;
+    display: inline-flex;
+    padding: 1ex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.title {
+    margin-top: auto;
+    margin-bottom: auto;
+
+}
+
+.logo {
+    height: 80px;
+    width: 80px;
+    border-radius: 2rem;
+}
+
+h3 {
+	background-image: var(--accent-gradient);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-size: 400%;
+	background-position: 0%;
+}
+
+.corp{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    height: 230px;
+    margin-right: 20px;
+    margin-left: 20px;
+
+    text-align: center;
+
+}
+
+p{
+    align-self: center;
+}
+
+.text{
+  margin: 0;
+  top: 50%;
+
+}
+
+.green{
+	background-image: var(--green);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-size: 400%;
+	background-position: 0%;
+}
+
+.orange{
+	background-image: var(--orange);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-size: 400%;
+	background-position: 0%;
+}
+
+.link{
+    display: flex;
+    flex-direction: column;
+
+    min-height: 150px;
+
+    justify-content: center;
+    align-items: center;
+}
+</style>
+
+
+
+<script>
+
+</script>
