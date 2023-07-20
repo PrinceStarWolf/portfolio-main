@@ -1,6 +1,6 @@
 # CrystalTeam Site Web Officiel
 ### Repo du projet de portfolio.
-[![Open in StackBlitz]( https://crystalteam.net )]
+https://crystalteam.net
 
 # Astro Starter Kit: Basics
 
