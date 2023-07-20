@@ -31,7 +31,7 @@ import Layout from "../layouts/Layout.astro";
                         <p>J'aide aussi dans le projet du bot discord, principalement sur l'hébergement.</p>
                         <br>
                         <div class="sign">
-                            <p>L'application a était créer avec react-native.</p>
+                            <p>L'application a été créé avec react-native.</p>
                             <p><span class="green">Terminé!</span></p>
                         </div>
                     </div>
@@ -62,17 +62,20 @@ import Layout from "../layouts/Layout.astro";
                         <p> Near est une application de petite annonces. Créer sous react-native avec la base de donnée supabase, cherchant uniquement à mettre en relation les vendeurs et acheteurs, le plus simplement possible. </p>
                         <br>
                         <div class="sign">
-                            <p>L'application a était créer avec react-native.</p>
+                            <p>L'application a été créé avec react-native.</p>
                             <p><span class="orange">En Cours!</span></p>
                         </div>
                     </div>
                 </div>
 
                 <div class="link">
-                    <LinkCard 
-                        href="https://github.com/PrinceStarWolf"
-                        title="Github Project Near"
-                    />
+                    <div class="empty">
+		                <span>
+                            <h2>
+                                Bientôt!
+                            </h2>
+                        </span>
+                    </div>
                 </div>
             </div>
             
@@ -95,7 +98,7 @@ import Layout from "../layouts/Layout.astro";
                         <p> Un site portfolio que vous este entrain de voir! Une Template fait par mes soins, servant de base pour ce site et les future demande de portfolio qui pourrait y correspondre.</p>
                         <br>
                         <div class="sign">
-                            <p>L'application a était créer avec AstroJS.</p>
+                            <p>L'application a été créé avec AstroJS.</p>
                             <p><span class="green">Terminé!</span></p>
                         </div>
                     </div>
@@ -103,7 +106,7 @@ import Layout from "../layouts/Layout.astro";
 
                 <div class="link">
                     <LinkCard 
-                        href="https://github.com/PrinceStarWolf"
+                        href="https://github.com/PrinceStarWolf/portfolio-main"
                         title="Template Github"
                     />
                 </div>
@@ -236,6 +239,35 @@ p{
 
     justify-content: center;
     align-items: center;
+}
+.empty{
+    display: flex;
+    position: relative;
+    height: 50px;
+    width: 280px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #0f0f0f;
+    border-radius: 1ch;
+    text-align: center;
+    transition: all .2s ease-in-out; 
+}
+
+.empty > span {
+    width: 100%;
+    text-decoration: none;
+    line-height: 1.4;
+    padding: 0.5rem 0.8rem;
+    border-radius: 0.35rem;
+    color: #FFF;
+    opacity: 0.8;
+}
+
+.empty > h2 {
+    margin: 0;
+    font-size: 1.25rem;
 }
 </style>
 
