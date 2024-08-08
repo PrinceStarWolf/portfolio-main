@@ -1,4 +1,4 @@
-# CrystalTeam Site Web Officiel
+# CrystalTeam Site Web Officiel - Alphe 2.0 - 1.5.0
 ### Repo du projet de portfolio.
 https://crystalteam.net
 
