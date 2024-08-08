@@ -1,7 +1,7 @@
 {
-  "name": "Crystal Dev",
+  "name": "Portfolio - Lhucia",
   "type": "module",
-  "version": "0.0.1",
+  "version": "1.5.2",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",

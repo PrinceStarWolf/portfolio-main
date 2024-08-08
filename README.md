@@ -1,4 +1,4 @@
-# CrystalTeam Site Web Officiel - Alpha 2.0 - 1.5.1
+# CrystalTeam Site Web Officiel - Alpha 2.0 - 1.5.2
 ### Repo du projet de portfolio.
 https://crystalteam.net
 
